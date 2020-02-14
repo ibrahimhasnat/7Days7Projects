@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  background-color: #069;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.profile-card {
+  width: 350px;
+  background: #f6f6f6;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.profile-cover {
+  background: url(../img/cover.jpg);
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 3px 3px 0;
+}
+
+.profile-cover img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.profile-body {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+}
+
+.profile-body h2 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.profile-body h2 span {
+  display: block;
+  color: #069;
+  font-size: 12px;
+}
+
+.social-links {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+}
+
+.social-links a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #069;
+}

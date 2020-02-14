@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  line-height: 26px;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+  z-index: 1;
+}
+
+.site-heading {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.search-box {
+  text-align: center;
+}
+
+.search-box form input {
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+.search-box form input:focus {
+  outline: none;
+}
+
+#result {
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.state-card {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.state-card h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.state-card h4 small {
+  font-size: 16px;
+}
+
+.state-card h5 {
+  font-size: 18px;
+  font-weight: 400;
+}

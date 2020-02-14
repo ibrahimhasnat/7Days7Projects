@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Key Code</title>
+    <style>
+      body {
+        background-color: #069;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      #key-code {
+        font-size: 25px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="key-code">
+      Press Any Key to Know The Code
+    </div>
+
+    <script>
+      document.body.addEventListener("keyup", e => {
+        const output = document.getElementById("key-code");
+        let key = e.key;
+        let code = e.keyCode;
+
+        let res = `Key = "${key}" and Key Code = "${code}"`;
+        output.textContent = res;
+      });
+    </script>
+  </body>
+</html>

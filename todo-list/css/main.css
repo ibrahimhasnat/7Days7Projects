@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  background: #ff5f6d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc371,
+    #ff5f6d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc371,
+    #ff5f6d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 768px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.todo-head h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 35px;
+  color: #fff;
+}
+
+#todo-form {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#todo-form input {
+  height: 40px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  border: 1px solid #f6f6f6;
+  padding: 15px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+#todo-form input:focus,
+#todo-form button:focus {
+  outline: none;
+}
+
+#todo-form input::placeholder {
+  color: #fff;
+}
+
+#todo-form button {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 30px;
+  width: 75px;
+}
+
+#output {
+  width: 550px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 35px;
+  list-style: none;
+}
+
+#output li {
+  padding: 15px;
+  background: #ddd;
+  margin-bottom: 3px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 3px;
+  position: relative;
+}
+
+#output li:nth-child(odd) {
+  background: #fff;
+}
+
+.remove-todo::after {
+  position: absolute;
+  font-family: "themify";
+  content: "\e646";
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-todo:hover::after {
+  color: #ff0000;
+}
